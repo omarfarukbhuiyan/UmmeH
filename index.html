@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Faruk</title>
+    <style>
+        .dv{
+            /* border: #3c4fe0 solid 3px;
+            border-radius: 10px; */
+            display: flex;
+            justify-content: center
+        }
+        .btn{
+            
+            /* align-items: center; */
+            appearance: none;
+            background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+            border: 0;
+            border-radius: 10px;
+            box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            /* display: inline-flex; */
+            font-family: "JetBrains Mono",monospace;
+            height: 48px;
+            /* justify-content: center; */
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            /* text-align: left; */
+            text-decoration: none;
+            transition: box-shadow .15s,transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow,transform;
+            font-size: 18px;
+            
+        }
+        .btn:focus {
+            box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        }
+
+        .btn:hover {
+            box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            box-shadow: #3c4fe0 0 3px 7px inset;
+            transform: translateY(2px);
+        }
+        .p1, .p2{
+            text-align: center;
+            display: block;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .p2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="dv">
+        <button class="btn" onclick="Omar(), Faruk()">উম্মে, উম্মে, এই উম্মে? </button>
+    </div>
+    <p class="p1" id="id1"></p>
+    <p class="p2" id="id2"></p>
+    <script src="js/emni.js"></script>
+</body>
+</html>
