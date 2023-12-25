@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Faruk</title>
     <style>
-        .dv{
+        
+        .dv, .miss{
             /* border: #3c4fe0 solid 3px;
             border-radius: 10px; */
             display: flex;
             justify-content: center
+        }
+        .miss{
+            gap: 10px;
         }
         .btn{
             
@@ -56,23 +60,78 @@
             box-shadow: #3c4fe0 0 3px 7px inset;
             transform: translateY(2px);
         }
-        .p1, .p2{
+        .p1, .p2, .p3 {
             text-align: center;
             display: block;
             color: black;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        .p4{
+            text-align: center;
+            display: block;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            visibility: hidden;
+        }
         .p2{
             color: red;
+            margin-top: 250px;
         }
-    </style>
+        .miss{
+            display: flex;
+        }
+        .btnYes{
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border-radius: 6px;
+                border: 2px solid #ff4742;
+                color: #ff4742;
+                background: 0 0;
+                padding: 8px;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+                font-weight: 800;
+                font-size: 16px;
+                height: 42px;
+                visibility: hidden;}
+                .btnNo{
+                    
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border-radius: 6px;
+                border: 2px solid #ff4742;
+                color: #fff;
+                background-color: #ff4742;
+                padding: 8px;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+                font-weight: 800;
+                font-size: 16px;
+                height: 42px;
+                visibility: hidden
+                }
+    .btnYes:hover{
+                background-color: #ff4742;
+                color: #fff;}
+                .btnNo:hover{
+                    background: 0 0;
+                    color: #ff4742;
+                }
+</style>
 </head>
-<body>
+<body class="body">
     <div class="dv">
-        <button class="btn" onclick="Omar(), Faruk()">উম্মে, উম্মে, এই উম্মে? </button>
+        <button class="btn" onclick="Omar(), Faruk(), Umme()">উম্মে, উম্মে, এই উম্মে? </button>
     </div>
     <p class="p1" id="id1"></p>
+    <p class="p3" id="mKorcho"></p>
+    <div class="miss" id="id4">
+        <button id="no" onclick="a()" class="btnNo">No</button>
+        <a href="https://call.whatsapp.com/voice/CNhKzEtw8g3jynlhm7g2CC"><button type="button" id="yes" class="btnYes">Yes</button></a>
+    </div>
+    <p class="p4" id="plz">প্লিজ সোনা, একটু মিস করো আমাকে। ওইযে Yes বাটনটা প্রেস করো প্লিজ।</p>
     <p class="p2" id="id2"></p>
+    
     <script src="js/emni.js"></script>
 </body>
 </html>
